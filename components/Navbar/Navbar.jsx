@@ -179,7 +179,7 @@ function Navbar() {
                   }}
                   onClick={() => setOpen(false)}
                 >
-                  <Link href="/orders" passHref>
+                  <Link href="/orderLog" passHref>
                     <a style={{ textDecoration: "none", color: "white" }}>
                       Orders
                     </a>

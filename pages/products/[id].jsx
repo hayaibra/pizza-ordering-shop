@@ -16,7 +16,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { add } from "../../app/store/Counter";
 import { addProduct } from "../../app/store/Cart";
 import { useState } from "react";
-import axios from "axios";
 
 const Price = styled("span")(({ theme }) => ({
   color: theme.palette.othercolor.main,
@@ -102,7 +101,7 @@ function Product(props) {
     <div>
       <Box
         sx={{
-          height: { xs: "155vh", sm: "114vh", md: "90vh" },
+          // height: { xs: "155vh", sm: "114vh", md: "90vh" },
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -121,6 +120,7 @@ function Product(props) {
             sx={{
               width: { xs: "250px", sm: "300px", md: "400px", lg: "500px" },
               height: { xs: "200px", sm: "300px", md: "400px", lg: "500px" },
+              marginTop: { xs: "30px", md: "0" },
             }}
             key={props.product.id}
           >
@@ -142,6 +142,7 @@ function Product(props) {
             marginBottom={3}
             sx={{
               fontSize: { xs: "30px", sm: "40px", md: "33px", lg: "45px" },
+              marginTop: { xs: "70px", sm: "35px", md: "0" },
             }}
           >
             {props.product.name}
@@ -280,4 +281,3 @@ export const getServerSideProps = async ({ params }) => {
     props: { product: data },
   };
 };
-

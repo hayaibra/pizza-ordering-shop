@@ -20,11 +20,17 @@ function Feature() {
   return (
     <FeaturesBox>
       <Box position="relative">
-        <ArrowLeftBox onClick={() => handleArrowLeft()}>
+        <ArrowLeftBox
+          sx={{
+            width: { xs: "20px", sm: "40px" },
+            height: { xs: "20px", sm: "40px" },
+            padding: "5px",
+          }}
+          onClick={() => handleArrowLeft()}
+        >
           <Image
             src={require("../../public/imgs/arrowl.png")}
-            width="30"
-            height="30"
+            objectFit="fill"
             alt="leftarrow"
           />
         </ArrowLeftBox>
@@ -49,11 +55,18 @@ function Feature() {
             </Box>
           ))}
         </SliderBox>
-        <ArrowRightBox onClick={() => handleArrowRight()}>
+        <ArrowRightBox
+          sx={{
+            width: { xs: "20px", sm: "40px" },
+            height: { xs: "20px", sm: "40px" },
+
+            padding: "5px",
+          }}
+          onClick={() => handleArrowRight()}
+        >
           <Image
             src={require("../../public/imgs/arrowr.png")}
-            width="30"
-            height="30"
+            objectFit="fill"
             alt="rightarrow"
           />
         </ArrowRightBox>

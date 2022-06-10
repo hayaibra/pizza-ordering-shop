@@ -135,7 +135,7 @@ function Product(props) {
           sx={{
             flex: 1,
             textAlign: { xs: "center", md: "start" },
-            padding: "40px 0",
+            padding: { md: "40px 0", lg: "30px 0" },
           }}
         >
           <Typography

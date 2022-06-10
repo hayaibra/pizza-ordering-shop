@@ -101,7 +101,7 @@ function Product(props) {
     <div>
       <Box
         sx={{
-          // height: { xs: "155vh", sm: "114vh", md: "90vh" },
+          padding: "40px 0",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -135,6 +135,7 @@ function Product(props) {
           sx={{
             flex: 1,
             textAlign: { xs: "center", md: "start" },
+            padding: "40px 0",
           }}
         >
           <Typography

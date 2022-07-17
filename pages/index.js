@@ -1,9 +1,7 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Feature from "../components/features/Feaures";
 import PizzaList from "../components/pizzalist/PizzaList";
 import OurRest from "../components/footer/OurRest";
-import axios from "axios";
 
 export default function Home({ products }) {
   return (

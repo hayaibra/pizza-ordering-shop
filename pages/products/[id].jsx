@@ -53,7 +53,8 @@ function Product(props) {
   const [extras, setExtras] = useState([]);
   const [quantity, setQuantity] = useState(1);
   const [finalTotal, setFinalTotal] = useState([]);
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(new Date().toLocaleString());
+  console.log( date);
 
   const globalState = useSelector((state) => state);
 

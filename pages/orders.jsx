@@ -85,7 +85,7 @@ function Order() {
                     <TableCell>{order.id}</TableCell>
                     <TableCell>{order.cutomerName}</TableCell>
                     <TableCell>{order.address}</TableCell>
-                    <TableCell>{order.finalTotal}</TableCell>
+                    <TableCell>{order.finalTotal} SYP</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

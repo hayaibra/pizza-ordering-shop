@@ -130,7 +130,7 @@ function Cart() {
               <p>
                 <span style={{ fontWeight: "bold" }}>Subtotal:</span>
                 {total}
-                SPY
+                SYP
               </p>
               <p>
                 <span style={{ fontWeight: "bold" }}>Discount:{discount}</span>
@@ -138,7 +138,7 @@ function Cart() {
               <p>
                 <span style={{ fontWeight: "bold" }}>Total:</span>
                 {finalBill}
-                SPY
+                SYP
               </p>
             </Box>
             <Box>

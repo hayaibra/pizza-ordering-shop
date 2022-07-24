@@ -49,7 +49,7 @@ export default function Details({ open, total, setOpen }) {
       <Dialog open={open} onClose={(e) => setOpen(false)}>
         <Box sx={{ padding: "30px", display: "flex", flexDirection: "column" }}>
           <Typography fontWeight="bold" mb={3}>
-            You Will Pay {total} SPY after Delivery
+            You Will Pay {total} SYP after Delivery
           </Typography>
           <TextField
             label="Name"

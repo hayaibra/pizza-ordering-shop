@@ -196,7 +196,7 @@ function Order() {
                 {bill.length > 0
                   ? bill.reduce((acc, current) => acc + current)
                   : bill[0]}
-                SPY
+                SYP
               </p>
               <p>
                 <span style={{ fontWeight: "bold" }}>Discount:</span> 0
@@ -206,7 +206,7 @@ function Order() {
                 {bill.length > 0
                   ? bill.reduce((acc, current) => acc + current)
                   : bill[0]}
-                SPY
+                SYP
               </p>
             </Box>
             <Box sx={{ display: "flex", justifyContent: "center" }}>

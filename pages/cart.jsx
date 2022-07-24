@@ -94,7 +94,7 @@ function Cart() {
                     </TableCell>
                     <TableCell>{row.price} SPY</TableCell>
                     <TableCell>{row.quantity}</TableCell>
-                    <TableCell>{row.price * row.quantity}SPY</TableCell>
+                    <TableCell>{row.price * row.quantity} SYP</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

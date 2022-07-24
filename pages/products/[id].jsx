@@ -150,7 +150,7 @@ function Product(props) {
             {props.product.name}
           </Typography>
           <Price id="price" name="price">
-            {price} SPY
+            {price} SYP
           </Price>
           <Typography
             my={3}

@@ -66,9 +66,9 @@ function OrderLog() {
                       <span key={extra.id}>{extra},</span>
                     ))}
                   </TableCell>
-                  <TableCell>{row.price} SPY</TableCell>
+                  <TableCell>{row.price} SYP</TableCell>
                   <TableCell>{row.quantity}</TableCell>
-                  <TableCell>{row.price * row.quantity}SPY</TableCell>
+                  <TableCell>{row.price * row.quantity} SYP</TableCell>
                   <TableCell>{row.date}</TableCell>
                 </TableRow>
               ))}

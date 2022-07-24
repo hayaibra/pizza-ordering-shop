@@ -17,7 +17,7 @@ function PizzaList({ products }) {
           }}
           textAlign="center"
         >
-          The Best Resturant Pizza
+          The Best Pizza Resturant
         </Typography>
         <Container maxWidth="xl">
           <Grid

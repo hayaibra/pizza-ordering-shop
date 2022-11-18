@@ -11,9 +11,9 @@ export default function Home({ products }) {
         <meta name="description" content="best pizza shop in town" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Feature />
+      {/*<Feature />
       <PizzaList products={products} />
-      <OurRest />
+  <OurRest />*/}
     </div>
   );
 }

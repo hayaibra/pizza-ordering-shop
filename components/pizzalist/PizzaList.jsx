@@ -19,18 +19,18 @@ function PizzaList({ products }) {
         >
           The Best Pizza Resturant
         </Typography>
-        <Container maxWidth="xl">
-          <Grid
-            container
-            spacing={10}
-            my={3}
-            sx={{ justifyContent: { xs: "center", sm: "flex-start" } }}
-          >
+        <Grid
+          container
+          spacing={10}
+          my={3}
+          sx={{ justifyContent: { xs: "center", sm: "flex-start" } }}
+        >
+          <Container maxWidth="xl">
             {products.map((product) => (
               <Card key={product.id} product={product} />
             ))}
-          </Grid>
-        </Container>
+          </Container>
+        </Grid>
       </PizzaListBox>
     </div>
   );

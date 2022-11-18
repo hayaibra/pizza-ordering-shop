@@ -12,14 +12,16 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Feature />
-      {/*<PizzaList products={products} />
-  <OurRest />*/}
+      <PizzaList products={products} />
+      {/*<OurRest />*/}
     </div>
   );
 }
 
 export const getServerSideProps = async () => {
-  const response = await fetch(`https://foor-ordering-app.vercel.app/api/products`);
+  const response = await fetch(
+    `https://foor-ordering-app.vercel.app/api/products`
+  );
   const data = await response.json();
 
   return {
@@ -28,4 +30,3 @@ export const getServerSideProps = async () => {
     },
   };
 };
-

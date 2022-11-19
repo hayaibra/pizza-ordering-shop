@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Feature from "../components/features/Feaures";
 import PizzaList from "../components/pizzalist/PizzaList";
-import OurRest from "../components/footer/OurRest";
+import OurRest from "../components/our-rests/OurRest";
 
 export default function Home({ products }) {
   return (
@@ -13,7 +13,7 @@ export default function Home({ products }) {
       </Head>
       <Feature />
       <PizzaList products={products} />
-      {/*<OurRest />*/}
+      <OurRest />
     </div>
   );
 }

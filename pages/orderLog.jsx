@@ -13,6 +13,16 @@ import React from "react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
+const cells = [
+  "Product",
+  "Name",
+  "Extras",
+  "Price",
+  "Quantity",
+  "Total",
+  "Date",
+];
+
 function OrderLog() {
   const [userData, setUserData] = useState("");
 
@@ -37,13 +47,11 @@ function OrderLog() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell sx={{ fontWeight: "bold" }}>Product</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Name</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Extras</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Price</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Quantity</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Total</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Date</TableCell>
+              {cells.map((cell, i) => (
+                <TableCell sx={{ fontWeight: "bold" }} key={i}>
+                  {cell}
+                </TableCell>
+              ))}
             </TableRow>
           </TableHead>
           <TableBody>

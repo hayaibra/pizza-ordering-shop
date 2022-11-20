@@ -15,7 +15,7 @@ function OurRest() {
             src={require("../../public/imgs/footer.png")}
             width="300"
             height="500"
-            style={{ left: "-50px" }}
+            // style={{ left: "-50px" }}
             alt="footer"
           />
         </ImageBox>

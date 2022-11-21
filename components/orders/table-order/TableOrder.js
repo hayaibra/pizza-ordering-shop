@@ -11,7 +11,6 @@ import React from "react";
 const cells = ["Order ID", "Customer", "Address", "Total"];
 
 const TableOrder = ({ orders }) => {
-  const { id, cutomerName, address, finalTotal } = orders;
   return (
     <TableContainer>
       <Table>
@@ -26,11 +25,11 @@ const TableOrder = ({ orders }) => {
         </TableHead>
         <TableBody>
           {orders.map((order) => (
-            <TableRow key={id}>
-              <TableCell>{id}</TableCell>
-              <TableCell>{cutomerName}</TableCell>
-              <TableCell>{address}</TableCell>
-              <TableCell>{finalTotal} SYP</TableCell>
+            <TableRow key={order.id}>
+              <TableCell>{order.id}</TableCell>
+              <TableCell>{order.cutomerName}</TableCell>
+              <TableCell>{order.address}</TableCell>
+              <TableCell>{order.finalTotal} SYP</TableCell>
             </TableRow>
           ))}
         </TableBody>
